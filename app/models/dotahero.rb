@@ -1,0 +1,2 @@
+class Dotahero < ApplicationRecord
+end
