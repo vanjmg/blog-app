@@ -13,8 +13,8 @@
             <td><%= hero.id %></td>
             <td><%= hero.name %></td>
             <td><%= button_to 'Show', dotahero_path(hero), method: 'get' %></td>
-      <td><%= button_to 'Edit', edit_dotahero_path(hero), method: 'get'%></td>
-      <td><%= button_to 'Remove', dotahero_path(hero), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+    <td><%= button_to 'Edit', edit_dotahero_path(hero), method: 'get'%></td>
+    <td><%= button_to 'Remove', dotahero_path(hero), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
         </tr>
     <% end %>
     </tbody>
