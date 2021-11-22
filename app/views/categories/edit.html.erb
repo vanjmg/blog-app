@@ -1,0 +1,5 @@
+<h3>Update Category Details</h3>
+<%= form_with model: @categories do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.submit %>
+<% end %>

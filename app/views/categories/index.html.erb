@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>CRUD</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    <% @categories.each do |categories| %>
+        <tr>
+            <td><%= categories.id %></td>
+            <td><%= categories.name %></td>
+            <td><%= button_to 'show', category_path(categories), method: 'get' %></td>
+            <td><%= button_to 'edit', edit_category_path(categories), method: 'get' %></td>
+            <td><%= button_to 'destroy', category_path(categories), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
+
+<%= button_to 'New Category', new_category_path(@categories), method: 'get' %>
